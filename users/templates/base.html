@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="DexignZone" />
+	<meta name="robots" content="" />
+	<meta name="description" content="Bookland-Book Store Ecommerce Website"/>
+	<meta property="og:title" content="Bookland-Book Store Ecommerce Website"/>
+	<meta property="og:description" content="Bookland-Book Store Ecommerce Website"/>
+	<meta property="og:image" content="../../makaanlelo.com/tf_products_007/bookland/xhtml/social-image.html"/>
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON -->
+	<link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}"/>
+	
+	<!-- PAGE TITLE HERE -->
+	<title>Bookland Book Store Ecommerce Website</title>
+	
+	<!-- MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap-select/dist/css/bootstrap-select.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'icons/fontawesome/css/all.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/swiper/swiper-bundle.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	
+	<!-- GOOGLE FONTS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+</head>	
+<body>
+
+<div class="page-wraper">
+
+    {% comment %} loader {% endcomment %}
+	
+	<!-- loader -->
+	{% include 'includes/loader.html' %}
+	<!-- Loader End -->
+
+
+	<!-- Header -->
+	{% include 'includes/header.html' %}
+	<!-- Header End -->
+	
+	
+    {% block content %}
+        
+    {% endblock content %}
+        
+
+	<!-- Footer -->
+	{% include 'includes/footer.html' %}
+    <!-- Footer End -->
+	
+	<button class="scroltop" type="button"><i class="fas fa-arrow-up"></i></button>
+</div>
+
+<!-- JAVASCRIPT FILES ========================================= -->
+<script src="{% static 'js/jquery.min.js' %}"></script><!-- JQUERY MIN JS -->
+<script src="{% static 'vendor/wow/wow.min.js' %}"></script><!-- WOW JS -->
+<script src="{% static 'vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script><!-- BOOTSTRAP MIN JS -->
+<script src="{% static 'vendor/bootstrap-select/dist/js/bootstrap-select.min.js' %}"></script><!-- BOOTSTRAP SELECT MIN JS -->
+<script src="{% static 'vendor/counter/waypoints-min.js' %}"></script><!-- WAYPOINTS JS -->
+<script src="{% static 'vendor/counter/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script><!-- SWIPER JS -->
+<script src="{% static 'js/dz.carousel.js' %}"></script><!-- DZ CAROUSEL JS -->
+<script src="{% static 'js/dz.ajax.js' %}"></script><!-- AJAX -->
+<script src="{% static 'js/custom.js' %}"></script><!-- CUSTOM JS -->
+</body>
+</html>
